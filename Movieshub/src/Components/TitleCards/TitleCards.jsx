@@ -24,7 +24,9 @@ const TitleCards = ({ title, category }) => {
       .catch((err) => console.error(err));
   }, []);
 
-  // const options = {
+  
+
+  //const options = {
   //   method: "GET",
   //   headers: {
   //     accept: "application/json",

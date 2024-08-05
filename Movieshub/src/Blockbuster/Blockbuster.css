@@ -1,0 +1,12 @@
+
+.navbar-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.movies-container {
+  margin-top: 60px;
+  padding: 20px;
+}

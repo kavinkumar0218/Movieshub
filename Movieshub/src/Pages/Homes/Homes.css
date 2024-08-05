@@ -57,3 +57,53 @@
     padding-left: 6%;
 
 }
+/* Ensuring the hero section covers the entire viewport */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+  }
+  
+  .hero-images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .mySlides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the images cover the entire hero section */
+  }
+  
+  .hero-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    z-index: 10; /* Ensures the caption is above the images */
+  }
+  
+  .caption-img {
+    width: 200px;
+  }
+  
+  .hero-btns {
+    margin-top: 10px;
+  }
+  
+  .btn {
+    margin-right: 10px;
+  }
+  
+  .more-cards {
+    padding: 20px;
+  }
+  
+  .Home {
+    margin-top: 60px; /* Adjust this value based on the height of your Navbar */
+  }
