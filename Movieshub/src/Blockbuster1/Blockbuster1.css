@@ -1,0 +1,18 @@
+
+.navbar-container1 {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .movies-container1 {
+    margin-top: 60px;
+    padding: 20px;
+  }
+  .title {
+    font-size: 24px;
+    color: #f60808;
+    background-color: yellow; /* Temporary style for debugging */
+    margin-bottom: 10px;
+  }

@@ -1,0 +1,40 @@
+/* Titlecards2.css */
+.title-card-2 {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-left: -300px;
+  }
+  .title-card-2 h2 {
+    margin-bottom: 10px;
+    color: #333; /* Example of a different color */
+  }
+  .card-list-2 {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px;
+  }
+  .card-list-2::-webkit-scrollbar {
+    display: none;
+  }
+  .card-list-2 img {
+    width: 200px; /* Adjusted width */
+    border-radius: 8px; /* Different border radius */
+    cursor: pointer;
+  }
+  .card-list-2 .card-2 {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  .card-list-2 .card-2:hover {
+    transform: scale(1.05); /* Hover effect */
+  }
+  .card-list-2 .card-2 p {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+  }
+  

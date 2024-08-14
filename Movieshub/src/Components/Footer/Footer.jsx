@@ -10,10 +10,10 @@ const Footer = () => {
     <div className='Footer'>
       <center>
       <div className="footer-icons">
-      <img src={youtube_icon} alt=""/>
-      <img src={twitter_icon} alt=""/>
-      <img src={instagram_icon} alt=""/>
-      <img src={facebook_icon} alt=""/>
+     <a href="https://www.youtube.com/watch?v=I_8afk7CvUo"> <img src={youtube_icon} alt=""/></a>
+      <a href ="https://x.com/?lang=en&mx=2&failedScript=vendor"><img src={twitter_icon} alt=""/></a>
+     <a href="https://www.instagram.com/accounts/login/?hl=en"> <img src={instagram_icon} alt=""/></a>
+      <a href ="https://www.facebook.com/"><img src={facebook_icon} alt=""/></a>
 
       </div>
       </center>

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; // Import Link for navigation
 import './Homes.css';
 import Navbar from '../../Components/Navbar/Navbar';
 import hero_banner from '../../assets/bannerimg.jpg';
-import hero_title from '../../assets/hero_title.png';
 import play_icon from '../../assets/play_icon.png';
 import info_icon from '../../assets/info_icon.png';
 import TitleCards from '../../Components/TitleCards/TitleCards';
@@ -18,7 +18,7 @@ const Home = () => {
       setMyIndex((prevIndex) => (prevIndex + 1) % 3);
     }, 4000);
 
-    return () => clearInterval(interval); // Cleanup the interval on component unmount
+    return () => clearInterval(interval);
   }, []);
 
   const slides = [batman, hero_banner, batman1];
@@ -39,24 +39,26 @@ const Home = () => {
           ))}
         </div>
         <div className="hero-caption">
-          {/* <img src={hero_title} alt="Hero Title" className='caption-img' /> */}
           <h1>Batman</h1>
           <p>
             Discovering his ties to a secret ancient order, a young man living in modern Istanbul embarks on a quest to save the city from an immortal enemy.
           </p>
           <div className="hero-btns">
-            <button className='btn'><img src={play_icon} alt="Play Icon" />Play</button>
-            <button className='btn dark-btn'><img src={info_icon} alt="Info Icon" />More Info</button>
+            <Link to="/video" className='btn'>
+              <img src={play_icon} alt="Play Icon" />Play
+            </Link>
+            <button className='btn dark-btn'>
+              <img src={info_icon} alt="Info Icon" />More Info
+            </button>
           </div>
         </div>
       </div>
       <div className="more-cards">
-      <TitleCards title={"Blockbuster Movies"} category="top_rated" />
-      <TitleCards title={"Only on Stream spot "} category="popular" />
+        <TitleCards title="Continue playing" category="top_rated" />
       </div>
       <Footer />
     </div>
   );
-}
+};
 
 export default Home;

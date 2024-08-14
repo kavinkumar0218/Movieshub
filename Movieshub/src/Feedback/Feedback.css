@@ -1,0 +1,46 @@
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:url(../assets/batman6.jpg);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .form-group, .form-groupes, .form-groups {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label, .form-groupes label, .form-groups label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-field, .textarea-field {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .textarea-field {
+    height: 150px;
+  }
+  
+  .submit-button {
+    background-color: #D90429;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

@@ -55,13 +55,14 @@
 }
 .more-cards{
     padding-left: 6%;
+    color: #fff;
 
 }
 /* Ensuring the hero section covers the entire viewport */
 .hero {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
     overflow: hidden;
   }
   
@@ -102,8 +103,32 @@
   
   .more-cards {
     padding: 20px;
+    
   }
   
   .Home {
     margin-top: 60px; /* Adjust this value based on the height of your Navbar */
   }
+  .video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; /* Adjust spacing as needed */
+  }
+  
+  .video-container iframe {
+    max-width: 100%;
+    height: auto;
+  }
+  .more-cards.title{
+    color:#fff
+  }
+  .video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  iframe {
+    border: none;
+  }
+  
